@@ -1,0 +1,38 @@
+{
+	"name": "directus-extension-vgrid",
+	"version": "1.0.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seymoe/directus-extension-vgrid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seymoe/directus-extension-vgrid/issues"
+  },
+  "homepage": "https://github.com/seymoe/directus-extension-vgrid#readme",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-interface",
+		"directus-extension-vgrid",
+		"vgrid"
+	],
+	"directus:extension": {
+		"type": "interface",
+		"path": "index.js",
+		"source": "src/index.js",
+		"host": "^9.5.2"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"start": "directus-extension build --watch"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "9.5.2",
+		"vue": "^3.2.29"
+	},
+	"dependencies": {
+		"@revolist/revogrid-column-numeral": "^1.0.2",
+		"@revolist/vue3-datagrid": "^3.0.97",
+		"apexcharts": "^3.35.0"
+	}
+}
